@@ -18,6 +18,7 @@ for frame in [50, 100, 200, 300, 400, 500, 600, 700]:
 
     plt.xlabel('y')
     plt.ylabel('x')
+    plt.title(f'E_z(z = 50), frame {frame}')
     fig.subplots_adjust(
         bottom = 0.1, top = 0.9, 
         left = 0.1, right = 0.9
