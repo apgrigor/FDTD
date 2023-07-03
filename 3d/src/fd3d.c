@@ -133,7 +133,7 @@ static PyObject* fd3d_run_sim(PyObject *self, PyObject *args) {
             }
         }
         for(int i = 0; i < Nx; i++) {
-            for(int j = ylower; j < yupper+1; j++) {
+            for(int j = ylower; j < yupper + 1; j++) {
                 for(int k = 0; k < Nz; k++) {
                     ez[i][j][k] = dz[i][j][k] - iz[i][j][k] - d2 * sz[i][j][k];
                     iz[i][j][k] += d1 * ez[i][j][k];
@@ -142,7 +142,7 @@ static PyObject* fd3d_run_sim(PyObject *self, PyObject *args) {
             }
         }
         for(int i = 0; i < Nx; i++) {
-            for(int j = yupper+1; j < Ny; j++) {
+            for(int j = yupper + 1; j < Ny; j++) {
                 for(int k = 0; k < Nz; k++) {
                     ez[i][j][k] = dz[i][j][k];
                 }
